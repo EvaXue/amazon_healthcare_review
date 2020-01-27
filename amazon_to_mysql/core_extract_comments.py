@@ -84,8 +84,8 @@ def get_comments_with_product_id(product_id):
 
     #print(max_page_number + 1)
 
-#    for page_number in range(1, max_page_number + 1):
-    for page_number in range(1, 10):
+    for page_number in range(1, max_page_number + 1):
+#    for page_number in range(1, 10):
 
         print page_number
         if page_number > 1:
@@ -118,7 +118,7 @@ def get_comments_with_product_id(product_id):
                 helpful = helpful.strip().split(' ')[0]
             except:
                 # logging.warning('Could not find any helpful-vote-statement tag.')
-                helpful = ''
+                helpful = '0'
 
             logging.info('***********************************************')
             logging.info('TITLE    = ' + title)
@@ -136,6 +136,7 @@ def get_comments_with_product_id(product_id):
                             'author_url': author_url,
                             'review_url': review_url,
                             'review_date': review_date,
+                            'helpful_votes':helpful,
                            })
     return reviews
 

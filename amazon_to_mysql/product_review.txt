@@ -14,11 +14,11 @@ var ue_csm = window,
 pec:0,ts:0,erl:[],ter:[],mxe:50,startTimer:function(){a.ts++;setInterval(function(){d.ue&&a.pec<a.ec&&d.uex("at");a.pec=a.ec},1E4)}};l.skipTrace=1;h.skipTrace=1;h.isStub=1;d.ueLogError=h;d.ue_err=a;e.onerror=l})(ue_csm,window);
 
 
-var ue_id = 'Q43XHSW2C51SKWATTGCS',
+var ue_id = 'PD74HADKMGXR7GGVSTE3',
     ue_url = '/gp/uedata',
     ue_navtiming = 1,
     ue_mid = 'ATVPDKIKX0DER',
-    ue_sid = '144-2672680-3132118',
+    ue_sid = '133-6775139-0133918',
     ue_sn = 'www.amazon.com',
     ue_furl = 'fls-na.amazon.com',
     ue_surl = 'https://unagi-na.amazon.com/1/events/com.amazon.csm.nexusclient.prod',
@@ -27,7 +27,7 @@ var ue_id = 'Q43XHSW2C51SKWATTGCS',
     ue_urt = 3,
     ue_rpl_ns = 'cel-rpl',
     ue_ddq = 1,
-    ue_fpf = '//fls-na.amazon.com/1/batch/1/OP/ATVPDKIKX0DER:144-2672680-3132118:Q43XHSW2C51SKWATTGCS$uedata=s:',
+    ue_fpf = '//fls-na.amazon.com/1/batch/1/OP/ATVPDKIKX0DER:133-6775139-0133918:PD74HADKMGXR7GGVSTE3$uedata=s:',
     ue_sbuimp = 1,
 
     ue_swi = 1;
@@ -124,7 +124,7 @@ function(a){b.Promise=b.Promise||a}),b.mix_d=function(a,b,g){P.when("@p/promise-
 
 
 
-Amazon.com: Customer reviews: Pivit Crutch Pads | Padding for Walking Arm Crutches | Universal Underarm Padded Forearm Handle Pillow Covers for Hand Grips | Soft Foam Armpit Bariatric Accessories for Adults, Kids (1 Gray Pair)
+Amazon.com: Customer reviews: Reign in Blood
 
 
 window.ue_ihe = (window.ue_ihe || 0) + 1;
@@ -172,13 +172,13 @@ if (window.csa) {
         'Application': 'Retail',
         'ObfuscatedMarketplaceId': 'ATVPDKIKX0DER',
         'Events.SushiEndpoint': 'https://unagi-na.amazon.com/1/events/com.amazon.csm.nexusclient.prod',
-        'CacheDetection.RequestID': "Q43XHSW2C51SKWATTGCS",
+        'CacheDetection.RequestID': "PD74HADKMGXR7GGVSTE3",
         'CacheDetection.Callback': window.ue && ue.reset
     });
 
     csa("Events")("setEntity", {
-        page: {requestId: "Q43XHSW2C51SKWATTGCS", meaningful: "interactive"},
-        session: {id: "144-2672680-3132118"}
+        page: {requestId: "PD74HADKMGXR7GGVSTE3", meaningful: "interactive"},
+        session: {id: "133-6775139-0133918"}
     });
 }
 !function(n){var e,o,r="splice",i=n.csa,t={},u={},f=n.csa._s,c=0,a={},s={},l=setTimeout,g=Object.keys;function h(n,t){return i(n,t)}function d(n,t){var i=u[n]||{};D(i,t),u[n]=i,l(b,0)}function p(n,t){a[n]||(a[n]=[]),a[n].push(t)}function v(n,t){if(n in s)t(s[n]);else{p(n,function(n){return t(n),!1})}}function m(n){if(t.DEBUG)throw n}function w(){return Math.abs(4294967295*Math.random()|0).toString(36)}function b(){for(var n=0;n<f.length;){var t=f[n],i=t[0]in u;if(!i&&!o)return void(c=t.length);i?(f[r](c=n,1),y(t)):n++}}function y(n){var arguments,t=u[n[0]],i=(arguments=n[1])[0];if(!t||!t[i])return m("Undefined function: "+t+"/"+i);e=n[3],u[n[2]]=t[i].apply(t,arguments.slice(1))||{},e=0}function S(){o=1,b()}function D(t,i){g(i).forEach(function(n){t[n]=i[n]})}v("$beforeunload",S),d("Config",{instance:function(n){D(t,n)}}),i.plugin=function(n){n(h)},h.config=t,h.register=d,h.on=p,h.removeListener=function(n,t){var i=a[n];i&&i[r](i.indexOf(t),1)},h.once=v,h.emit=function(n,t){for(var i=a[n]||[],e=0;e<i.length;)!1===i[e](t)?i[r](e,1):e++;s[n]=t||{}},h.UUID=function(){return[w(),w(),w(),w()].join("-")},h.time=function(n){var t=e?new Date(e.time):new Date;return"ISO"===n?t.toISOString():t.getTime()},h.error=m,h.exec=function(n,t){return function(){try{n.apply(this,arguments)}catch(n){}}},(h.global=n).csa._s.push=function(n){n[0]in u&&(!f.length||o)?y(n):f[r](c++,0,n)},b(),l(function(){l(S,t.SkipMissingPluginsTimeout||5e3)},1)}("undefined"!=typeof window?window:global);csa.plugin(function(t){var e;function n(){if(!e)try{e=t.global.localStorage||{}}catch(t){e={}}}t.store=function(t,c){try{if(n(),!t)return Object.keys(e);if(!c)return e[t];e[t]=c}catch(t){}},t.deleteStored=function(t){try{n(),delete e[t]}catch(t){}}});csa.plugin(function(n){var r,e=n.global,o=n("Events"),i=e.location,f=e.document,a=e.addEventListener,l=n.emit;function t(a){var e=!!r;e&&(l("$beforePageTransition"),l("$pageTransition"));var t={schemaId:"csa.PageEntity.1",id:r=n.UUID(),url:i.href,server:i.hostname,path:i.pathname,referrer:f.referrer,title:f.title};Object.keys(a||{}).forEach(function(e){t[e]=a[e]}),o("setEntity",{page:t}),e&&l("$afterPageTransition")}function d(){l("$load"),l("$afterload")}function c(){l("$beforeunload"),l("$unload"),l("$afterunload")}i&&f&&(a&&(a("beforeunload",c),a("pagehide",c),"complete"===f.readyState?d():a("load",d)),n.register("SPA",{newPage:t}),t())});csa.plugin(function(c){var t="UNKNOWN",a="id",i="messageId",e="timestamp",u="producerId",o="application",f="obfuscatedMarketplaceId",s="entities",r="schemaId",d="version",l="attributes",p=c.config,g=c("Transport"),v={},I=function(n,t){Object.keys(n).forEach(t)};function m(t,i,e){I(i,function(n){n in t||(t[n]={version:1,id:i[n][a]||c.UUID()}),U(t[n],i[n],e)})}function U(t,i,e){I(i,function(n){!e&&n!==a||(t[n]=i[n])})}function b(c,n,o){I(n,function(n){var t=c[n];if(t[r]){var i={},e={};h(i),i[a]=t[a],i[u]=t[u]||o,i[r]=t[r],i[d]=t[d]++,U(i[l]=e,t,1),E(e),g("log",i)}})}function h(n){n[e]=n[e]||c.time("ISO"),n[i]=c.UUID(),n[o]=p.Application||t,n[f]=p.ObfuscatedMarketplaceId||t}function E(n){delete n[d],delete n[r],delete n[u]}function O(c){var o={};this.log=function(n,t){var i={},e=(t||{}).full;h(n),m(i,v,e),m(i,o,e),m(i,n[s]||{},e),I(i,function(n){E(i[n])}),n[u]=c[u],n[s]=i,g("log",n)},this.setEntity=function(n){m(o,n,1),b(o,n,c[u])}}c.on("$pageTransition",function(){v={}}),c.register("Events",{setEntity:function(n){m(v,n,1),b(v,n,"csa")},instance:function(n){return new O(n)}})});csa.plugin(function(s){var c,l="Transport",d="post",a="preflight",r="csa.cajun.",i="store",u="deleteStored",n="addEventListener",f="sendBeacon",t=0,e=s.config[l+".BufferSize"]||2e3,g=s.config[l+".RetryDelay"]||1500,o=[],h=0,p=[],v=s.global,y=v.document,m=s.config[l+".FlushInterval"]||5e3,E=0;function T(n){if(864e5<s.time()-new Date(n.timestamp))return s.error("Event is too old: "+n);h<e&&(o.push(n),h++,!E&&t&&(E=setTimeout(R,m)))}function R(){p.forEach(function(t){var e=[];o.forEach(function(n){t.accepts(n)&&e.push(n)}),e.length&&(t.chunks?t.chunks(e).forEach(function(n){S(t,n)}):S(t,e))}),o=[],E=0}function S(t,e){function o(){s[u](r+n)}var n=s.UUID();s[i](r+n,JSON.stringify(e)),[function(n,t,e){var o=v.navigator||{},r=v.cordova||{};if(!o[f]||!n[d])return 0;n[a]&&r&&"ios"===r.platformId&&!c&&((new Image).src=n[a]().url,c=1);var i=n[d](t);if(!i.type&&o[f](i.url,i.body))return e(),1},function(n,t,e){if(!n[d])return 0;var o=n[d](t),r=o.url,i=o.body,c=o.type,a=new XMLHttpRequest,u=0;function f(n,t,e){a.open("POST",n),e&&a.setRequestHeader("Content-Type",e),a.send(t)}return a.onload=function(){a.status<299?e():s.config[l+".XHRRetries"]&&u<3&&setTimeout(function(){f(r,i,c)},++u*g)},f(r,i,c),1}].some(function(n){try{return n(t,e,o)}catch(n){}})}s.once("$afterload",function(){var e;t=1,e=T,(s[i]()||[]).forEach(function(n){if(!n.indexOf(r))try{var t=s[i](n);s[u](n),JSON.parse(t).forEach(e)}catch(n){s.error(n)}}),y&&y[n]&&y[n]("visibilitychange",R,!1),R()}),s.once("$afterunload",function(){t=1,R()}),s.on("$afterPageTransition",function(){h=0}),s.register(l,{log:T,register:function(n){p.push(n)}})});csa.plugin(function(n){var r=n.config["Events.SushiEndpoint"];n("Transport")("register",{accepts:function(n){return n.schemaId},post:function(n){var t=n.map(function(n){return{data:n}});return{url:r,body:JSON.stringify({events:t})}},preflight:function(){var n,t=/\/\/(.*?)\//.exec(r);return t&&t[1]&&(n="https://"+t[1]+"/ping"),{url:n}},chunks:function(n){for(var t=[];500<n.length;)t.push(n.splice(0,500));return t.push(n),t}})});csa.plugin(function(t){var i,a,o,r,d=t.config["Content.ImpressionMinimumTime"]||1e3,e="addEventListener",c="hidden",n="renderedTo",s=n+"Viewed",u=n+"Meaningful",f=n+"Impressed",g=1,m=2,l=3,v=4,p=5,h="loaded",T=7,I=t.global,P=t("Events",{producerId:"csa"}),y=I.document,C={},b={};if(!y||!y[e]||void 0===y[c])return E("PageStateChange.2",{state:"ignored"});function w(e){if(!C[T]){var n;if(C[e]=t.time(),e!==l&&e!==h||(i=i||C[e]),i&&!y[c])a=a||C[e],(n={})[u]=i-o,n[s]=a-o,E("PageView.4",n),r=r||setTimeout(S,d);if(e!==p&&e!==g&&e!==m||(clearTimeout(r),r=0),e!==g&&e!==m||E("PageRender.3",{transitionType:e===g?"hard":"soft"}),e===T)(n={})[u]=i-o,n[s]=a-o,n[f]=C[e]-o,E("PageImpressed.2",n)}}function E(e,n){b[e]||(n.schemaId="csa."+e,P("log",n,{full:1}),b[e]=1)}function M(){w(y[c]?p:v)}function S(){w(T),r=0}function V(){var e=o?m:g;C={},b={},a=i=0,o=t.time(),w(e),M()}function $(){var e=y.readyState;"interactive"===e&&w(l),"complete"===e&&w(h)}V(),y[e]("visibilitychange",M,!1),y[e]("readystatechange",$,!1),t.on("$afterPageTransition",V),t.once("$load",$),t.register("Content",{get:function(){return{emit:w}}})});
@@ -383,7 +383,6 @@ window.navmet.push({key:'Logo',end:+new Date(),begin:window.navmet.tmp});
     
       
         
-        EN
       
       
         
@@ -395,10 +394,6 @@ window.navmet.push({key:'Logo',end:+new Date(),begin:window.navmet.tmp});
 
   Hello, Sign in
   Account & Lists
-  
-  
-    Account
-    
   
   Sign in
   Account & Lists
@@ -668,8 +663,8 @@ window.$Nav && $Nav.when("util.templates").run("FlyoutErrorTemplate", function(t
   , searchAliases: ["aps","amazon-custom-products","amazon-devices","amazonbasics","amazonfresh","wholefoods","stripbooks","popular","apparel","electronics","sporting","sports-and-fitness","outdoor-recreation","fan-shop","garden","videogames","toys-and-games","jewelry","digital-text","digital-music","prime-digital-music","watches","grocery","hpc","instant-video","handmade","handmade-jewelry","handmade-home-and-kitchen","prime-instant-video","shop-instant-video","baby-products","office-products","software","smart-home","magazines","tools","automotive","misc","industrial","mi","pet-supplies","digital-music-track","digital-music-album","mobile","mobile-apps","movies-tv","music-artist","music-album","music-song","stripbooks-spanish","electronics-accessories","pantry","photo","audio-video","computers","furniture","kitchen","audible","audiobooks","beauty","shoes","arts-crafts","appliances","gift-cards","pets","outdoor","lawngarden","collectibles","replacement-parts","financial","fine-art","fashion","fashion-womens","fashion-womens-clothing","fashion-womens-jewelry","fashion-womens-shoes","fashion-womens-watches","fashion-womens-handbags","fashion-mens","fashion-mens-clothing","fashion-mens-jewelry","fashion-mens-shoes","fashion-mens-watches","fashion-girls","fashion-girls-clothing","fashion-girls-jewelry","fashion-girls-shoes","fashion-girls-watches","fashion-boys","fashion-boys-clothing","fashion-boys-jewelry","fashion-boys-shoes","fashion-boys-watches","fashion-baby","fashion-baby-boys","fashion-baby-girls","fashion-luggage","3d-printing","tradein-aps","live-explorations","local-services","vehicles","video-shorts","warehouse-deals","luxury-beauty","banjo-apps","black-friday","cyber-monday","alexa-skills","subscribe-with-amazon","courses","edu-alt-content","amazon-global-store","prime-wardrobe","under-ten-dollars"]
   , filterAliases: []
   , pageType: "CustomerReviews"
-  , requestId: "Q43XHSW2C51SKWATTGCS"
-  , sessionId: "144-2672680-3132118"
+  , requestId: "PD74HADKMGXR7GGVSTE3"
+  , sessionId: "133-6775139-0133918"
   , language: "en_US"
   , customerId: ""
   , b2b: 0
@@ -860,14 +855,14 @@ window.$Nav && $Nav.declare('config.subnavFlyoutUrl', '\x2Fgp\x2Fnavigation\x2Fa
 
 window.$Nav && $Nav.declare('config.recordEvUrl', '\x2Fgp\x2Fnavigation\x2Fajax\x2Frecordevent.html');
 window.$Nav && $Nav.declare('config.recordEvInterval', 15000);
-window.$Nav && $Nav.declare('config.sessionId', '144\x2D2672680\x2D3132118');
-window.$Nav && $Nav.declare('config.requestId', 'Q43XHSW2C51SKWATTGCS');
+window.$Nav && $Nav.declare('config.sessionId', '133\x2D6775139\x2D0133918');
+window.$Nav && $Nav.declare('config.requestId', 'PD74HADKMGXR7GGVSTE3');
 
 window.$Nav && $Nav.declare('config.alexaListEnabled', true);
 
 window.$Nav && $Nav.declare('config.readyOnATF', false);
 
-window.$Nav && $Nav.declare('config.dynamicMenuArgs', {"rid":"Q43XHSW2C51SKWATTGCS","isFullWidthPrime":0,"isPrime":0,"dynamicRequest":1,"weblabs":"","isFreshRegionAndCustomer":"","primeMenuWidth":310});
+window.$Nav && $Nav.declare('config.dynamicMenuArgs', {"rid":"PD74HADKMGXR7GGVSTE3","isFullWidthPrime":0,"isPrime":0,"dynamicRequest":1,"weblabs":"","isFreshRegionAndCustomer":"","primeMenuWidth":310});
 
 window.$Nav && $Nav.declare('config.customerName', false);
 
@@ -969,7 +964,7 @@ window.$Nav && $Nav.declare('config.flyoutClickState', 'C');
 
 window.$Nav && $Nav.declare('config.pssFlag', 0);
 
-window.$Nav && $Nav.declare('config.isShortAccountList', true);
+window.$Nav && $Nav.declare('config.isShortAccountList', false);
 
 if (window.P && typeof window.P.declare === "function" && typeof window.P.now === "function") {
   window.P.now('packardGlowIngressJsEnabled').execute(function(glowEnabled) {
@@ -1003,15 +998,15 @@ window.navmet.MainEnd = new Date();
 
   
       
-        Pivit Crutch Pads | Padding for Walking Arm Crutches | Universal...
+        Reign in Blood
     
     
     
       
         Customer reviews
     
-  Customer reviews4.5 out of 5 stars4.5 out of 5
-        28  customer ratings
+  Customer reviews4.7 out of 5 stars4.7 out of 5
+        706  customer ratings
 
 
 
@@ -1075,7 +1070,7 @@ window.navmet.MainEnd = new Date();
         
           
             
-              69%
+              85%
             
           
         
@@ -1140,7 +1135,7 @@ window.navmet.MainEnd = new Date();
         
           
             
-              15%
+              7%
             
           
         
@@ -1205,7 +1200,7 @@ window.navmet.MainEnd = new Date();
         
           
             
-              16%
+              3%
             
           
         
@@ -1243,108 +1238,110 @@ window.navmet.MainEnd = new Date();
 
 
   
+  
 
     
     
 
       
-        
-          2 star
-        
-
-        
-        
-          0% (0%)
-        
-
-        
-      
-
-      
-        
-      
-
-      
-        
 
         
           
-            0%
+            2 star
+          
+        
+
+        
+      
+
+      
+        
           
         
       
-    
-
-  
-  
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-    
-    
 
       
         
-          1 star
-        
-
-        
-        
-          0% (0%)
-        
-
-        
-      
-
-      
-        
-      
-
-      
-        
-
         
           
-            0%
+            
+              1%
+            
           
         
       
     
 
   
+
+
   
 
 
 
-Pivit Crutch Pads | Padding for Walking Arm Crutches | Universal Underarm Padded Forearm Handle Pillow Covers for Hand Grips | Soft Foam Armpit Bariatric Accessories for Adults, Kids (1 Gray Pair)bypivitPrice:$16.01+ Free shipping with Amazon PrimeWrite a reviewAdd to CartAdd to Wish List
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+    
+    
+
+      
+
+        
+          
+            1 star
+          
+        
+
+        
+      
+
+      
+        
+          
+        
+      
+
+      
+        
+        
+          
+            
+              4%
+            
+          
+        
+      
+    
+
+  
+
+
+
+Reign in BloodbySLAYERFormat: Audio CDChangeWrite a reviewSee All Buying OptionsAdd to Wish List
     This page works best with JavaScript. Disabling it will result in some disabled or missing features. You can still see all customer reviews for the product.
 
 
@@ -1357,19 +1354,19 @@ Pivit Crutch Pads | Padding for Walking Arm Crutches | Universal Underarm Padded
     window.P && P.register('af');
     window.P && P.register('sp.load.js');
 
-{"csrfToken":"0.519495123805162;1579720479435;gvFOiukjJGNZPnLH9dJDU2jQgY82qlCbNXEA2VEAAAABAAAAAF4onx9yYXcAAAAA+4kUEk/7iMGR3xPcX6iU","signinUrl":"https://www.amazon.com/ap/signin?openid.return_to=https%3A%2F%2Fwww.amazon.com%2FCrutches-Universal-Underarm-Bariatric-Accessories%2Fproduct-reviews%2FB07P2NCJM9%3Fie%3DUTF8%26reviewerType%3Dall_reviews%26sortBy%3Dhelpful&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0","asin":"B07P2NCJM9"}Top positive reviewSee all 23 positive reviews Carol Ann Ostrander4.0 out of 5 starsMakes a bad situation tolerable.May 28, 2019My  under arms were so sore after using crutches for about a week I didn't know what to do.  The scooter option was not going to work for me so crutches were all I had.  These little pads saved me!  And, the handle pads added extra comfort and kept my hand palms from hurting.  Well worth the money.
+{"csrfToken":"0.2508659363797443;1580153699197;gmV21vA0vzB+dUWqw8ezCGZxNtglB33FT3eTCmkAAAABAAAAAF4vO2NyYXcAAAAA+4kUEk/7iMGR3xPcX6iU","signinUrl":"https://www.amazon.com/ap/signin?openid.return_to=https%3A%2F%2Fwww.amazon.com%2FReign-Blood-SLAYER%2Fproduct-reviews%2FB00BV0W8RQ%3Fie%3DUTF8%26reviewerType%3Dall_reviews%26sortBy%3Dhelpful&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0","asin":"B00BV0W8RQ"}Top positive reviewSee all 590 positive reviews Matt4.0 out of 5 starsGreat Music, Poor DynamicsMarch 12, 2015The music is fantastic; this album is a classic.BUT:The MP3's are based on the 2002 reissue, meaning the original recording (which had an average dynamic range of 12db, or near vinyl quality) has been crushed down to a "modern" dynamic range of 6db.  This means the original recording had more twice the variation in loud sounds to soft sounds.  If you're uncertain what that means, here's my perspective on it compared to the original: the drums have lost almost all of the "thud".  The guitars are now way high in the mix, completely drowning out any bass work.  There are many times that you can hardly make out the instrumentation; the fastest parts of the tracks just sound like a wall of noise.What would improve a user's experience?  This is old-school music, use the original recording with dynamics in tact.  The album was recorded to sound a certain way; compressing the sound ruins a lot of the enjoyment of listening.Compressing a classic album like this is like varnishing the Mona Lisa to make it look more modern: it may seem better now, but you've ruined the intent of the original.
       
       Read more
   
-          3 people found this helpful
-      Top critical reviewSee all 3 critical reviews Agustin3.0 out of 5 starsThey're okApril 30, 2019Using these for padding really helped out not getting too sore. Only lasted about a week before they just lost their cushion.
+          36 people found this helpful
+      Top critical reviewSee all 91 critical reviews Aaron3.0 out of 5 starsBe carefulDecember 28, 2018So this pressing comes in 2 flavors. One comes with an all poly sleeve, the other with a poly lined-white paper sleeve. The former is a really bad pressing as it lacks bass. Seriously, like completely devoid of bass. The latter is rich and full and sounds terrific (bass is prevalent as it should be).My friend purchased his copy first and brought it over for us to listen to. His copy was the latter. Sounded fantastic, so I immediately placed my order. The record came (in the former sleeve) and sounded terrible. I returned it and found a used copy in the latter sleeve, and am quite please.So in short:all poly sleeve == bad (1 star) -> return it, request a new one until you get the white paper sleevepoly lined white paper sleeve == fantastic (5 star)
       
       Read more
   
-          2 people found this helpful
+          16 people found this helpful
       
 
-        SearchSort byTop ratedMost recentTop ratedFilter byAll reviewersVerified purchase onlyAll reviewersAll stars5 star only4 star only3 star only2 star only1 star onlyAll positiveAll criticalAll starsText, image, videoImage and video reviews onlyText, image, videoShowing 1-10 of 26 reviewsThere was a problem filtering reviews right now. Please try again later.Carol Ann Ostrander4.0 out of 5 stars
+        SearchSort byTop ratedMost recentTop ratedFilter byAll reviewersVerified purchase onlyAll reviewersAll stars5 star only4 star only3 star only2 star only1 star onlyAll positiveAll criticalAll starsAll formatsFormat: Audio CDAll formatsText, image, videoImage and video reviews onlyText, image, videoShowing 1-10 of 681 reviewsThere was a problem filtering reviews right now. Please try again later.Aaron3.0 out of 5 stars
 
 
 
@@ -1379,9 +1376,9 @@ Pivit Crutch Pads | Padding for Walking Arm Crutches | Universal Underarm Padded
 
   
   
-    Makes a bad situation tolerable.
+    Be careful
   
-May 28, 2019Verified PurchaseEarly Reviewer Rewards(What's this?)
+December 28, 2018Format: VinylVerified Purchase
 
 
 
@@ -1391,10 +1388,10 @@ May 28, 2019Verified PurchaseEarly Reviewer Rewards(What's this?)
 
   
   
-    My  under arms were so sore after using crutches for about a week I didn't know what to do.  The scooter option was not going to work for me so crutches were all I had.  These little pads saved me!  And, the handle pads added extra comfort and kept my hand palms from hurting.  Well worth the money.
+    So this pressing comes in 2 flavors. One comes with an all poly sleeve, the other with a poly lined-white paper sleeve. The former is a really bad pressing as it lacks bass. Seriously, like completely devoid of bass. The latter is rich and full and sounds terrific (bass is prevalent as it should be).My friend purchased his copy first and brought it over for us to listen to. His copy was the latter. Sounded fantastic, so I immediately placed my order. The record came (in the former sleeve) and sounded terrible. I returned it and found a used copy in the latter sleeve, and am quite please.So in short:all poly sleeve == bad (1 star) -> return it, request a new one until you get the white paper sleevepoly lined white paper sleeve == fantastic (5 star)
   
 
-  3 people found this helpful
+  16 people found this helpful
       
           Helpful
       
@@ -1412,7 +1409,7 @@ May 28, 2019Verified PurchaseEarly Reviewer Rewards(What's this?)
           
             Oldest
         
-There was a problem loading comments right now. Please try again later.Micheal R. Schlicht4.0 out of 5 stars
+There was a problem loading comments right now. Please try again later.Matt4.0 out of 5 stars
 
 
 
@@ -1422,9 +1419,9 @@ There was a problem loading comments right now. Please try again later.Micheal R
 
   
   
-    Good product!
+    Great Music, Poor Dynamics
   
-August 20, 2019Verified Purchase
+March 12, 2015Format: Audio CDVerified Purchase
 
 
 
@@ -1434,7 +1431,108 @@ August 20, 2019Verified Purchase
 
   
   
-    Nice product accept the ones that wrap around the handles are too small for the crutches!
+    The music is fantastic; this album is a classic.BUT:The MP3's are based on the 2002 reissue, meaning the original recording (which had an average dynamic range of 12db, or near vinyl quality) has been crushed down to a "modern" dynamic range of 6db.  This means the original recording had more twice the variation in loud sounds to soft sounds.  If you're uncertain what that means, here's my perspective on it compared to the original: the drums have lost almost all of the "thud".  The guitars are now way high in the mix, completely drowning out any bass work.  There are many times that you can hardly make out the instrumentation; the fastest parts of the tracks just sound like a wall of noise.What would improve a user's experience?  This is old-school music, use the original recording with dynamics in tact.  The album was recorded to sound a certain way; compressing the sound ruins a lot of the enjoyment of listening.Compressing a classic album like this is like varnishing the Mona Lisa to make it look more modern: it may seem better now, but you've ruined the intent of the original.
+  
+
+  36 people found this helpful
+      
+          Helpful
+      
+  
+
+22 comments
+      Report abuse
+
+    Comment
+
+  There was a problem loading comments right now. Please try again later.
+
+    Showing 0 commentsSort by:
+            Newest
+          
+            Oldest
+        
+There was a problem loading comments right now. Please try again later.James5.0 out of 5 stars
+
+
+
+
+
+
+
+  
+  
+    Jesus Saves on vinyl
+  
+September 9, 2018Format: VinylVerified Purchase
+
+
+
+
+
+
+
+  
+  
+    I cant say anything about Reign in Blood that hasnt been said already.  Just a blistering fast thrash album with zero weak tracks. Stone cold classic!This 180 gram vinyl sounds absolutely Fantastic. Lombardos drumming sounds so crushingly clear, Ill never listen to my old CD version again. Album includes a lyric sheet. Id 100% recommend picking up this release.
+  
+
+    
+  
+
+        
+
+    
+            
+    
+        P.when('review-image-binder', 'reviewsLightbox-js').execute(function(reviewImageBinder) {
+            reviewImageBinder.bindReview("RSRF6F86FAUH1",
+                "RSRF6F86FAUH1_imageSection_main",
+                "RSRF6F86FAUH1_gallerySection_main");
+        });
+    
+
+  4 people found this helpful
+      
+          Helpful
+      
+  
+
+0Comment
+      Report abuse
+
+    Comment
+
+  There was a problem loading comments right now. Please try again later.
+
+    Showing 0 commentsSort by:
+            Newest
+          
+            Oldest
+        
+There was a problem loading comments right now. Please try again later.Brenda A. Conklin5.0 out of 5 stars
+
+
+
+
+
+
+
+  
+  
+    Iconic
+  
+October 27, 2018Format: Audio CDVerified Purchase
+
+
+
+
+
+
+
+  
+  
+    This is an album that truly lives up to it's hype. Even now, after the countless extreme metal albums I have heard, this is still possibly the heaviest. There is not a single moment on this album that gives you a break from the sheer speed and intensity of it. Opening up with the unforgiving Angel of Death and closing with the pure evil combination of Postmortem and the iconic Raining Blood, every song on this bad boy is a masterpiece. Please, please, please get this album if you haven't heard it before and want to start dabbling in the world of extreme metal, and even if you have heard it just get it anyway. It's worth it.
   
 
   One person found this helpful
@@ -1455,7 +1553,13 @@ August 20, 2019Verified Purchase
           
             Oldest
         
-There was a problem loading comments right now. Please try again later.marvin mejia5.0 out of 5 stars
+There was a problem loading comments right now. Please try again later.
+      
+        Harold
+      
+        VINE VOICE
+    
+  5.0 out of 5 stars
 
 
 
@@ -1465,9 +1569,9 @@ There was a problem loading comments right now. Please try again later.marvin me
 
   
   
-    Big improvement
+    " # 1 THRASH METAL  ALBUM"
   
-September 23, 2019Verified Purchase
+December 27, 2015Format: Audio CDVerified Purchase
 
 
 
@@ -1477,7 +1581,222 @@ September 23, 2019Verified Purchase
 
   
   
-    This product was awesome helped a lot with being able to use my crutches comfortably.Easy to clean just throw them in the washer and dryer and good to go. would definitely recommend if your going to be using crutches for any length of time.
+    Fronted by Tom Araya, Slayer features some of the most distinguishable and unique thrash shouts everAll the tracks are lightning fast, often containing little or no repetition or predictable structure. Because of this, the album flows seamlessly from one song to another forming one solid half hour of thrash. .Hanneman and King trade off solos in nearly every song, solidifying themselves as some of metals most potent and unruly shredders. Some of the fastest, most aggressive riffs and drumming ever heard in metalDave Lombardo was ahead of his time as a metal drummer, as he produced some of the fastest thrash and blast beats one could possibly hear in 1986. HIGHLY RECOMMENDED!!!!!!!!!!!!!!!!!!!!!!
+  
+
+  2 people found this helpful
+      
+          Helpful
+      
+  
+
+0Comment
+      Report abuse
+
+    Comment
+
+  There was a problem loading comments right now. Please try again later.
+
+    Showing 0 commentsSort by:
+            Newest
+          
+            Oldest
+        
+There was a problem loading comments right now. Please try again later.D. K. Malone5.0 out of 5 stars
+
+
+
+
+
+
+
+  
+  
+    Somewhere in my Ultimate Top 10
+  
+September 10, 2001Format: Audio CDVerified Purchase
+
+
+
+
+
+
+
+  
+  
+    This album will always take me back to 1986. I was a senior in high school, and I had some friends who had been trying to convert me to speed metal for at least a couple of years. (I was a devout punk.) They tried repeatedly with Ride the Lightning, Hell Awaits, Haunting the Chapel, To Mega Therion, Bonded By Blood... and repeatedly they failed. Finally they succeeded with Reign In Blood. (To be fair, Master of Puppets was also part of the equation.) I've been listening to it on a more or less regular basis for 15 years now. I've never bothered to compile one of those 'Desert Island' lists, but this would definitely be one of the first albums on it.Every band has a peak in their career. This is Slayer's. That's not to say that the rest of their albums suck. Just that Reign In Blood towers miles high above the rest of their material. This is just one of those rare albums where the planets aligned and everything fell perfectly into place. It has a certain aggression and violence to it that they've never repeated. Each song is as good as the last, there is absolutely no filler. The production is nigh perfect. Somehow everything in the mix was pushed forward; it literally sounds "in your face." Well, except for the bass guitar. I used to wonder if there was actually any bass recorded on this album. Perhaps Tom was putting all of his effort into the vocals... I think this is his best performance. He sounds positively maniacal, and he's never sounded quite like this on any other album. Perhaps most surprising is that virtually every single lyric that comes out of his mouth is perfectly intelligible. But the real meat of this album is Hanneman and King and Lombardo all keeping up with each other and making it sound easy. Obviously, faster thrash came later, thanks to bands like Napalm Death... but nothing anywhere near this demonically complex and brutally satisfying.The bottom line about this album is that until Reign In Blood, "speed metal" basically sounded like a Judas Priest album played at 45 RPM. Reign In Blood took it to the next evolutionary phase.EDIT: 10/7/08 -- I just finished reading the 33 1/3 book about this album, which I definitely recommend to all fans. It mentioned something in passing that I think could possibly explain what the "secret sauce" was that makes Reign stand out from the rest of Slayer's catalog. The one and only record that was ever named as a direct influence at the specific time they were writing Reign was DRI's album Dealing With It, which was released right around the same time Slayer released Hell Awaits in Spring 1985. Yeah, that would do it. Too bad they didn't have influences of that caliber when they made the rest of their albums.
+  
+
+  2 people found this helpful
+      
+          Helpful
+      
+  
+
+11 comment
+      Report abuse
+
+    Comment
+
+  There was a problem loading comments right now. Please try again later.
+
+    Showing 0 commentsSort by:
+            Newest
+          
+            Oldest
+        
+There was a problem loading comments right now. Please try again later.Kai5.0 out of 5 stars
+
+
+
+
+
+
+
+  
+  
+    This album is a beast
+  
+April 12, 2019Format: MP3 MusicVerified Purchase
+
+
+
+
+
+
+
+  
+  
+    My favourite Slayer album. A must-own for Slayer fans, or a good intro to Slayer for new listeners.
+  
+
+  2 people found this helpful
+      
+          Helpful
+      
+  
+
+0Comment
+      Report abuse
+
+    Comment
+
+  There was a problem loading comments right now. Please try again later.
+
+    Showing 0 commentsSort by:
+            Newest
+          
+            Oldest
+        
+There was a problem loading comments right now. Please try again later.slayerfan5.0 out of 5 stars
+
+
+
+
+
+
+
+  
+  
+    Ridiculous Unbelievable
+  
+June 8, 2010Format: Audio CDVerified Purchase
+
+
+
+
+
+
+
+  
+  
+    This album is so RIDICULOUS. It is simply not believable that this album was penned by a human being. Slayer must have cut blood at the cross roads. There is no other explanation. I have played this album at least a thousand times and am still in awe every time. I can't believe the authors of Hell Awaits jumped to this level lyrically and musically without the hand of Satan involved or some other lunatic deity. However, since I'm an atheist, I can only conclude that Slayer is indeed collectively at the genius level of thrash. The IQ required for this album must be around 180, 185; or as high as 400, which of course would explain a lot.For anyone who has listened to this and did not conclude the same, you simply did not listen. The utilization of "atonal chromaticism" ([...]) is so amazing. The sound of this album transforms it into something four dimensional. It is a busy album, preventing a complete appreciation the first six hundred sixty five times it is listened to. I can see why Slayer fans are rabid fanatics (see [...]).The opening, Angel of Death, starts with an aggressive guitar attack and before your brain can finish processing what just happened, Slayer launch into Piece by Piece with Dave Lombardo's double bass drum from Angel of Death still bouncing around your cortex. Piece by Piece is near its end when you realize this is really the second song already and your brain, which has been put into a coma by so much crap music from the radio station, begins to get stimulated for the first time. What you've just felt is a jump in your IQ. The launch into Necrophobic blows your brain away, forcing it to contract and retreat like your eyes thrust into bright sunshine when it's been midnight for so long. Altar of Sacrifice starts and you've barely enough time to figure out it's a new song and you start sensing evil resident within the music, awakening your own demon. Altar of Sacrifice concludes and you read that Jesus Saves is next so you trick yourself into thinking the music is going to slow down and at first Hanneman gives the illusion that Slayer is mortal after all until King, Hanneman, and Araya start up the pummeling machine and you try your best to keep up with the guitar solos and Araya's commanding lecture about religion. Your granted another breather when Criminally Insane starts and Lombardo injects some interesting percussion into your frontal lobe as the time warp starts again and you've become the victim again of Araya's terrifying anecdotal evidence of the certain demise of mankind as the guitar duo's assault resonates across your synapses like a tectonic shuffle at lunatic speed.Reborn brings to reality your stunned mind's conviction that the horror and metal are relentless and black and only getting darker, and you really are beginning to feel ripped and torn. Epidemic then suddenly crashes in on your brain courtesy of Dave Lombardo and Araya's dark intonations are a preamble to the death of mankind. But this scene seems all to real and possible. The guitar solos are short be complementary to the rhythm.When Postmortem starts you feel the impending doom and know right away that an epic song has just started. The culmination of insanity has been captured in this song and queries you with raw honesty querying whether you want to die. The question might scare you given the context as you get delivered to you a blast of sheer lunacy in musicianship and lyrics. Raining blood follows the sinister segue where you are sure you heard recordings of souls in hell wailing their anguish. The devil begins speaking to you through King and Hanneman in Raining in Blood as he unveils to you a picture of hell and what awaits you. The conclusion of this song is a shock back to reality and you can't believe you just spent four hours in hell. Then you look at the clock and wonder how so much content could be compressed into less than thirty minutes. So you listen again, falling victim to Satan again.
+  
+
+  16 people found this helpful
+      
+          Helpful
+      
+  
+
+0Comment
+      Report abuse
+
+    Comment
+
+  There was a problem loading comments right now. Please try again later.
+
+    Showing 0 commentsSort by:
+            Newest
+          
+            Oldest
+        
+There was a problem loading comments right now. Please try again later.Slade Edmonds4.0 out of 5 stars
+
+
+
+
+
+
+
+  
+  
+    Pretty solid re-issue
+  
+April 18, 2019Format: VinylVerified Purchase
+
+
+
+
+
+
+
+  
+  
+    I have seen some comments about some pressings lacking bass.  Luckily I didn't get one of those.  This pressing is pretty solid, save a bit of surface noise that I don't normally notice out of the better pressings.  Of course, you won't be hearing a lot of this noise... it's SLAYER.
+  
+
+  
+      
+          Helpful
+      
+  
+
+0Comment
+      Report abuse
+
+    Comment
+
+  There was a problem loading comments right now. Please try again later.
+
+    Showing 0 commentsSort by:
+            Newest
+          
+            Oldest
+        
+There was a problem loading comments right now. Please try again later.Petty Fan5.0 out of 5 stars
+
+
+
+
+
+
+
+  
+  
+    Reign Indeed!!!!!
+  
+May 20, 2007Format: Audio CDVerified Purchase
+
+
+
+
+
+
+
+  
+  
+    Being sort of casual Slayer fan,this is the second of thiers,I have purchased.Seasons In The Abyss,being my first.They are fast becoming one of fave bands.The music is so raw and has great energy. Really from beginning to end,this one rocks!!!! Angel of Death and Raining In Blood,the ones I was most familiar with.But after hearing the whole thing,I can add a few more greats to fave list.That being,Piece By Piece,Jesus Saves,Criminally Insane,Reborn and Postmortem.Boy,what I have missed.A 1986 album and for twenty plus years,what I have missed. If you are a die hard,you,of course,know the album.If you are a growing diehard like me,check this one out now!!!! It will totally kick in your cd player.Go scare your neighbors with the Gods of Thrash!!!!!!!!!!!!!!!BTW,I was lucky enough to buy at $13.99 for this import.
   
 
   One person found this helpful
@@ -1498,360 +1817,12 @@ September 23, 2019Verified Purchase
           
             Oldest
         
-There was a problem loading comments right now. Please try again later.tammy5.0 out of 5 stars
-
-
-
-
-
-
-
-  
-  
-    Much softer
-  
-July 9, 2019Verified Purchase
-
-
-
-
-
-
-
-  
-  
-    Much more comfortable.
-  
-
-  2 people found this helpful
-      
-          Helpful
-      
-  
-
-0Comment
-      Report abuse
-
-    Comment
-
-  There was a problem loading comments right now. Please try again later.
-
-    Showing 0 commentsSort by:
-            Newest
-          
-            Oldest
-        
-There was a problem loading comments right now. Please try again later.flower5.0 out of 5 stars
-
-
-
-
-
-
-
-  
-  
-    Super comfy
-  
-July 8, 2019Verified Purchase
-
-
-
-
-
-
-
-  
-  
-    Great product. Arrived quickly and as expected!
-  
-
-  One person found this helpful
-      
-          Helpful
-      
-  
-
-0Comment
-      Report abuse
-
-    Comment
-
-  There was a problem loading comments right now. Please try again later.
-
-    Showing 0 commentsSort by:
-            Newest
-          
-            Oldest
-        
-There was a problem loading comments right now. Please try again later.Agustin3.0 out of 5 stars
-
-
-
-
-
-
-
-  
-  
-    They're ok
-  
-April 30, 2019Verified PurchaseEarly Reviewer Rewards(What's this?)
-
-
-
-
-
-
-
-  
-  
-    Using these for padding really helped out not getting too sore. Only lasted about a week before they just lost their cushion.
-  
-
-  2 people found this helpful
-      
-          Helpful
-      
-  
-
-0Comment
-      Report abuse
-
-    Comment
-
-  There was a problem loading comments right now. Please try again later.
-
-    Showing 0 commentsSort by:
-            Newest
-          
-            Oldest
-        
-There was a problem loading comments right now. Please try again later.Ginad5.0 out of 5 stars
-
-
-
-
-
-
-
-  
-  
-    Great!!
-  
-May 20, 2019Verified PurchaseEarly Reviewer Rewards(What's this?)
-
-
-
-
-
-
-
-  
-  
-    Very comfortable and easy to put on! 4 weeks of use no complaints!
-  
-
-  2 people found this helpful
-      
-          Helpful
-      
-  
-
-0Comment
-      Report abuse
-
-    Comment
-
-  There was a problem loading comments right now. Please try again later.
-
-    Showing 0 commentsSort by:
-            Newest
-          
-            Oldest
-        
-There was a problem loading comments right now. Please try again later.Leslie Freeman5.0 out of 5 stars
-
-
-
-
-
-
-
-  
-  
-    Won't be disappointed with this product.
-  
-July 1, 2019Verified Purchase
-
-
-
-
-
-
-
-  
-  
-    Everything came in perfect condition.Love it all.
-  
-
-  2 people found this helpful
-      
-          Helpful
-      
-  
-
-0Comment
-      Report abuse
-
-    Comment
-
-  There was a problem loading comments right now. Please try again later.
-
-    Showing 0 commentsSort by:
-            Newest
-          
-            Oldest
-        
-There was a problem loading comments right now. Please try again later.Amy Danger5.0 out of 5 stars
-
-
-
-
-
-
-
-  
-  
-    Good product
-  
-September 21, 2019Verified Purchase
-
-
-
-
-
-
-
-  
-  
-    These were easy to put on and use
-  
-
-  
-      
-          Helpful
-      
-  
-
-0Comment
-      Report abuse
-
-    Comment
-
-  There was a problem loading comments right now. Please try again later.
-
-    Showing 0 commentsSort by:
-            Newest
-          
-            Oldest
-        
-There was a problem loading comments right now. Please try again later.Amazon Customer4.0 out of 5 stars
-
-
-
-
-
-
-
-  
-  
-    Underarm & Hand
-  
-September 7, 2019Verified Purchase
-
-
-
-
-
-
-
-  
-  
-    Love the comfy underarm pads but dislike the hand grip pads because of their extra large size. I have very large hands and the hand pads were still too large for comfort and control
-  
-
-  
-      
-          Helpful
-      
-  
-
-0Comment
-      Report abuse
-
-    Comment
-
-  There was a problem loading comments right now. Please try again later.
-
-    Showing 0 commentsSort by:
-            Newest
-          
-            Oldest
-        
-There was a problem loading comments right now. Please try again later.There are 26 customer reviews and 28 customer ratings.Previous pageNext page
+There was a problem loading comments right now. Please try again later.There are 681 customer reviews and 706 customer ratings.Previous pageNext page
      if (ue) {
          uet('cf');
      }
 window.P.register('cf');
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-    Questions? Get fast answers from reviewers
-  
-  
-    
-    
-    
-    
-    
-
-    
-      Ask
-    
-    Please make sure that you are posting in the form of a question.
-    Please enter a question.
-    
-  
-  
-
-
-
-
-
-
-
-Customers also viewed these itemsVive Crutch Pads - Padding for Walking Arm Crutches - Universal Underarm Padded Forearm...byVive$12.994.6 out of 5 stars741Vive Sheepskin Crutch Pads - Padding for Walking Arm Crutches - Universal Underarm...byVive$14.994.4 out of 5 stars219USA Made Crutcheze Essentials Underarm Crutch Pad and Hand Grip Covers with Soft Foam...byCrutcheze$13.994.7 out of 5 stars190Crutcheze Premium USA Made Crutch Pad and Hand Grip Covers | Comfortable Underarm...byCrutcheze$24.994.7 out of 5 stars3,902Vive Crutch Pads - Padding for Walking Arm Crutches - Universal Underarm Padded Forearm...byVive$12.994.6 out of 5 stars741Need customer service? Click here See all details for Pivit Crutch Pads | Padding for Walking Arm Crutches | Universal...
+Customers also viewed these itemsSouth of HeavenbySlayer$11.134.9 out of 5 stars20Hell Awaits [Vinyl]bySlayer$22.594.6 out of 5 stars155Seasons in the AbyssbySlayer$9.994.8 out of 5 stars20Seasons In The Abyss [LP][Explicit]bySlayer$21.724.8 out of 5 stars311South Of Heaven [LP][Explicit]bySlayer$21.884.8 out of 5 stars281Need customer service? Click here See all details for Reign in Blood
 
 
 
@@ -1967,9 +1938,9 @@ window.$Nav && $Nav.declare('config.prefetch',function() {
     window.$Nav && $Nav.when('$', 'page.ready').run('MXMarketplaceRedirectOverlay',function($) {
         $.ajax({
             type: 'POST',
-            url: '/gp/redirection/mexico_new.html/144-2672680-3132118',
+            url: '/gp/redirection/mexico_new.html/133-6775139-0133918',
             data: {
-                path: '/product-reviews/B07P2NCJM9',
+                path: '/product-reviews/B00BV0W8RQ',
                 queryString: '?ie=UTF8\u0026reviewerType=all%5Freviews\u0026showViewpoints=1\u0026ie=UTF8\u0026pageNumber=1\u0026sortBy=helpful',
                 pageType: 'CustomerReviews',
                 referer: ''
@@ -2000,7 +1971,7 @@ window.$Nav && $Nav.declare('config.prefetch',function() {
             type: 'POST',
             url: '/gp/redirection/canada_new.html',
             data: {
-                path: '/product-reviews/B07P2NCJM9',
+                path: '/product-reviews/B00BV0W8RQ',
                 queryString: '?ie=UTF8\u0026reviewerType=all%5Freviews\u0026showViewpoints=1\u0026ie=UTF8\u0026pageNumber=1\u0026sortBy=helpful',
                 pageType: 'CustomerReviews',
 
@@ -2040,7 +2011,7 @@ window.$Nav && $Nav.declare('config.prefetch',function() {
             type: 'POST',
             url: '/gp/redirection/australia_new.html',
             data: {
-                path: '/product-reviews/B07P2NCJM9',
+                path: '/product-reviews/B00BV0W8RQ',
                 queryString: '?ie=UTF8\u0026reviewerType=all%5Freviews\u0026showViewpoints=1\u0026ie=UTF8\u0026pageNumber=1\u0026sortBy=helpful',
                 pageType: 'CustomerReviews',
                 referer: ''
@@ -2071,7 +2042,7 @@ window.$Nav && $Nav.declare('config.prefetch',function() {
             type: 'POST',
             url: '/gp/redirection/uae.html',
             data: {
-                path: '/product-reviews/B07P2NCJM9',
+                path: '/product-reviews/B00BV0W8RQ',
                 queryString: '?ie=UTF8\u0026reviewerType=all%5Freviews\u0026showViewpoints=1\u0026ie=UTF8\u0026pageNumber=1\u0026sortBy=helpful',
                 pageType: 'CustomerReviews',
                 referer: ''
@@ -2107,7 +2078,7 @@ window.$Nav && $Nav.declare('config.prefetch',function() {
   
 
 
-    {"origSessionId":"144-2672680-3132118","subPageType":null,"pageType":"CustomerReviews","ASIN":"B07P2NCJM9","path":"/product-reviews/B07P2NCJM9","isAUI":"1"}
+    {"origSessionId":"133-6775139-0133918","subPageType":null,"pageType":"CustomerReviews","ASIN":"B00BV0W8RQ","path":"/product-reviews/B00BV0W8RQ","isAUI":"1"}
       
 
       
@@ -2234,7 +2205,7 @@ window.$Nav && $Nav.declare('config.prefetch',function() {
 
 
     
-        {"rhfHandlerParams":{"search":"","rhfAsins":"","noP13NCache":"","weblabTriggers":"","auiDebug":"","keywords":"","k":"","rviAsins":"","url":"","parentSession":"144-2672680-3132118","rhfState":"","contextMetadataOverride":"","currentSubPageType":null,"field-keywords":"","relatedRequestId":"Q43XHSW2C51SKWATTGCS","recsAsins":"","excludeASIN":"QjA3UDJOQ0pNOQ==","auditEnabled":"","customerId":"","testRecsFailure":"","previewCampaigns":"","forceWidgets":"","currentPageType":"CustomerReviews","stringDebug":""},"subPageType":null,"requestId":"Q43XHSW2C51SKWATTGCS","sessionId":"144-2672680-3132118","customerId":"","pageType":"CustomerReviews","ybhHandlerParams":{"relatedRequestId":"Q43XHSW2C51SKWATTGCS","currentPageType":"CustomerReviews","parentSession":"144-2672680-3132118"}}
+        {"rhfHandlerParams":{"search":"","rhfAsins":"","noP13NCache":"","weblabTriggers":"","auiDebug":"","keywords":"","k":"","rviAsins":"","url":"","parentSession":"133-6775139-0133918","rhfState":"","contextMetadataOverride":"","currentSubPageType":null,"field-keywords":"","relatedRequestId":"PD74HADKMGXR7GGVSTE3","recsAsins":"","excludeASIN":"QjAwQlYwVzhSUQ==","auditEnabled":"","customerId":"","testRecsFailure":"","previewCampaigns":"","forceWidgets":"","currentPageType":"CustomerReviews","stringDebug":""},"subPageType":null,"requestId":"PD74HADKMGXR7GGVSTE3","sessionId":"133-6775139-0133918","customerId":"","pageType":"CustomerReviews","ybhHandlerParams":{"relatedRequestId":"PD74HADKMGXR7GGVSTE3","currentPageType":"CustomerReviews","parentSession":"133-6775139-0133918"}}
     
 
 
@@ -2357,8 +2328,6 @@ Alexa Actionable Analytics for the Web
 
 
 
-Sell on Amazon Start a Selling Account
-
 Amazon Business Everything For Your Business
 
 Amazon Fresh Groceries & More Right To Your Door
@@ -2371,9 +2340,9 @@ Amazon Ignite Sell your original Digital Educational Resources
 
 Amazon Rapids Fun stories for  kids on the go
 
-
-
 Amazon Web Services Scalable Cloud Computing Services
+
+
 
 Audible Listen to Books & Original Audio Performances
 
@@ -2387,9 +2356,9 @@ CreateSpace Indie Print Publishing Made Easy
 
 DPReview Digital Photography
 
-
-
 East Dane Designer Men's Fashion
+
+
 
 Fabric Sewing, Quilting & Knitting
 
@@ -2405,9 +2374,9 @@ Kindle Direct Publishing Indie Digital Publishing Made Easy
 	
 Prime Now FREE 2-hour Delivery on Everyday Items
 
-
-
 Amazon Photos Unlimited Photo Storage Free With Prime
+
+
 
 Prime Video Direct Video Distribution Made Easy
 
@@ -2421,9 +2390,9 @@ Woot! Deals and  Shenanigans
 
 Zappos Shoes & Clothing
 
-
-
 Ring Smart Home Security Systems
+
+
 
 
 eero WiFi Stream 4K Video in Every Room
@@ -2440,14 +2409,16 @@ Amazon Renewed Like-new products you can trust
 Amazon Second Chance Pass it on, trade it in, give it a second life
 
 
+
+
    
 Conditions of UsePrivacy NoticeInterest-Based Ads 1996-2020, Amazon.com, Inc. or its affiliates
 
-(function(a,b){a.attachEvent?a.attachEvent("onload",b):a.addEventListener&&a.addEventListener("load",b,!1)})(window,function(){setTimeout(function(){var el=document.getElementById("sis_pixel_r2");el&&(el.innerHTML='<iframe id="DAsis" src="//s.amazon-adsystem.com/iu3?d=amazon.com&slot=navFooter&a2=0101a5699c636c721e8cab7584b84851caccd6a2c2308e42303fc5cabf69f7a3656f&old_oo=0&ts=1579720479490&s=AdkS6CLJ-Ctb-vbSbVSvcpC8gEdZlazfeho0O0hMXVm7&cb=1579720479490" width="1" height="1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>')},300)});
+(function(a,b){a.attachEvent?a.attachEvent("onload",b):a.addEventListener&&a.addEventListener("load",b,!1)})(window,function(){setTimeout(function(){var el=document.getElementById("sis_pixel_r2");el&&(el.innerHTML='<iframe id="DAsis" src="//s.amazon-adsystem.com/iu3?d=amazon.com&slot=navFooter&a2=01017ba606f9ecf0145ef31fe73a05a3948f66419165fb6a9d1d6f2dcea2fad6c7a0&old_oo=0&ts=1580153699257&s=AXUvi-K2QuHv-p9k1o1ZxRtSDQ9VWupus5_XsqdZQ2pT&cb=1580153699257" width="1" height="1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>')},300)});
 
 
 
-
+(function(w,t){w.attachEvent?w.attachEvent('onload',t):w.addEventListener('load',t, !1)})(window,function(){setTimeout(function(){document.getElementById('apaypx').innerHTML='<iframe id=\'apaypxframe\' src=\'https://coin.amazonpay.com/rb?a2=0101f38129cff682ed59d713927a46930b35097e07bf0ff17a668292896518da8139&d=www.amazon.com\' frameborder=0 width=0 height=0>'},300)});
 
 
 
@@ -2509,7 +2480,7 @@ var ue_pty = "CustomerReviews";
 
 var ue_spty = "remoteProduct";
 
-var ue_pti = "B07P2NCJM9";
+var ue_pti = "B00BV0W8RQ";
 
 
 var ue_adb = 4;
@@ -2598,7 +2569,7 @@ function y(){var a=h.styleSheets;a&&a.length&&e(a,function(a){if(a=a.ownerNode){
 m={},p=0,D=k.ue_nsip||1E3,C=5,A=1==k.ue_urt,u=!0;ue_csm.ue_disableNonSecure||(d.performance&&d.performance.setResourceTimingBufferSize&&d.performance.setResourceTimingBufferSize(300),r())})(ue_csm,window,document);
 
 
-var ue_aa_a = "T1";
+var ue_aa_a = "C";
 if (ue.trigger && (ue_aa_a === "C" || ue_aa_a === "T1")) {
     ue.trigger("UEDATA_AA_SERVERSIDE_ASSIGNMENT_CLIENTSIDE_TRIGGER_190249", ue_aa_a);
 }
@@ -2609,7 +2580,7 @@ attribution:"performanceMetrics"})}}})(ue_csm,window);
 
 if (window.csa) {
     csa("Events")("setEntity", {
-        page:{pageType: "CustomerReviews", subPageType: "remoteProduct", pageTypeId: "B07P2NCJM9"}
+        page:{pageType: "CustomerReviews", subPageType: "remoteProduct", pageTypeId: "B00BV0W8RQ"}
     });
 }
 

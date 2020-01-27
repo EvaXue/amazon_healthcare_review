@@ -41,8 +41,14 @@ for json_obj in ALL_JSON:
             review_url = validate_string(item.get("review_url", None))
             review_date = validate_string(item.get("review_date", None))
             title = validate_string(item.get("title", None))
+            helpful_votes = validate_string(item.get("helpful_votes", None))
+            print helpful_votes
+            if helpful_votes == 'One':
+                helpful_votes ='1'
 
 
-            cursor.execute("INSERT INTO helpful_review (review,	product_id,	rating,review_url,review_date,title) VALUES (%s,%s,	%s,%s,%s,%s)", (review,	product_id,	rating,review_url,review_date,title))
+
+
+            cursor.execute("INSERT INTO helpful_review (review,	product_id,	rating,review_url,review_date,title,helpful_votes) VALUES (%s,%s,%s,%s,%s,%s,%s)", (review,	product_id,	rating,review_url,review_date,title,helpful_votes))
             cnn.commit()
 cursor.close()

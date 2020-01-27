@@ -12,7 +12,7 @@ from io import open
 from banned_exception import BannedException
 from constants import AMAZON_BASE_URL
 
-OUTPUT_DIR = 'comments'
+OUTPUT_DIR = 'comments/Comment_full'
 
 if not os.path.exists(OUTPUT_DIR):
     os.makedirs(OUTPUT_DIR)
