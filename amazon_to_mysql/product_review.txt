@@ -14,11 +14,11 @@ var ue_csm = window,
 pec:0,ts:0,erl:[],ter:[],mxe:50,startTimer:function(){a.ts++;setInterval(function(){d.ue&&a.pec<a.ec&&d.uex("at");a.pec=a.ec},1E4)}};l.skipTrace=1;h.skipTrace=1;h.isStub=1;d.ueLogError=h;d.ue_err=a;e.onerror=l})(ue_csm,window);
 
 
-var ue_id = 'PD74HADKMGXR7GGVSTE3',
+var ue_id = 'QQ4ZG9ACYC3M10M0Q6X8',
     ue_url = '/gp/uedata',
     ue_navtiming = 1,
     ue_mid = 'ATVPDKIKX0DER',
-    ue_sid = '133-6775139-0133918',
+    ue_sid = '141-0808096-1187415',
     ue_sn = 'www.amazon.com',
     ue_furl = 'fls-na.amazon.com',
     ue_surl = 'https://unagi-na.amazon.com/1/events/com.amazon.csm.nexusclient.prod',
@@ -27,7 +27,7 @@ var ue_id = 'PD74HADKMGXR7GGVSTE3',
     ue_urt = 3,
     ue_rpl_ns = 'cel-rpl',
     ue_ddq = 1,
-    ue_fpf = '//fls-na.amazon.com/1/batch/1/OP/ATVPDKIKX0DER:133-6775139-0133918:PD74HADKMGXR7GGVSTE3$uedata=s:',
+    ue_fpf = '//fls-na.amazon.com/1/batch/1/OP/ATVPDKIKX0DER:141-0808096-1187415:QQ4ZG9ACYC3M10M0Q6X8$uedata=s:',
     ue_sbuimp = 1,
 
     ue_swi = 1;
@@ -172,16 +172,16 @@ if (window.csa) {
         'Application': 'Retail',
         'ObfuscatedMarketplaceId': 'ATVPDKIKX0DER',
         'Events.SushiEndpoint': 'https://unagi-na.amazon.com/1/events/com.amazon.csm.nexusclient.prod',
-        'CacheDetection.RequestID': "PD74HADKMGXR7GGVSTE3",
+        'CacheDetection.RequestID': "QQ4ZG9ACYC3M10M0Q6X8",
         'CacheDetection.Callback': window.ue && ue.reset
     });
 
     csa("Events")("setEntity", {
-        page: {requestId: "PD74HADKMGXR7GGVSTE3", meaningful: "interactive"},
-        session: {id: "133-6775139-0133918"}
+        page: {requestId: "QQ4ZG9ACYC3M10M0Q6X8", meaningful: "interactive"},
+        session: {id: "141-0808096-1187415"}
     });
 }
-!function(n){var e,o,r="splice",i=n.csa,t={},u={},f=n.csa._s,c=0,a={},s={},l=setTimeout,g=Object.keys;function h(n,t){return i(n,t)}function d(n,t){var i=u[n]||{};D(i,t),u[n]=i,l(b,0)}function p(n,t){a[n]||(a[n]=[]),a[n].push(t)}function v(n,t){if(n in s)t(s[n]);else{p(n,function(n){return t(n),!1})}}function m(n){if(t.DEBUG)throw n}function w(){return Math.abs(4294967295*Math.random()|0).toString(36)}function b(){for(var n=0;n<f.length;){var t=f[n],i=t[0]in u;if(!i&&!o)return void(c=t.length);i?(f[r](c=n,1),y(t)):n++}}function y(n){var arguments,t=u[n[0]],i=(arguments=n[1])[0];if(!t||!t[i])return m("Undefined function: "+t+"/"+i);e=n[3],u[n[2]]=t[i].apply(t,arguments.slice(1))||{},e=0}function S(){o=1,b()}function D(t,i){g(i).forEach(function(n){t[n]=i[n]})}v("$beforeunload",S),d("Config",{instance:function(n){D(t,n)}}),i.plugin=function(n){n(h)},h.config=t,h.register=d,h.on=p,h.removeListener=function(n,t){var i=a[n];i&&i[r](i.indexOf(t),1)},h.once=v,h.emit=function(n,t){for(var i=a[n]||[],e=0;e<i.length;)!1===i[e](t)?i[r](e,1):e++;s[n]=t||{}},h.UUID=function(){return[w(),w(),w(),w()].join("-")},h.time=function(n){var t=e?new Date(e.time):new Date;return"ISO"===n?t.toISOString():t.getTime()},h.error=m,h.exec=function(n,t){return function(){try{n.apply(this,arguments)}catch(n){}}},(h.global=n).csa._s.push=function(n){n[0]in u&&(!f.length||o)?y(n):f[r](c++,0,n)},b(),l(function(){l(S,t.SkipMissingPluginsTimeout||5e3)},1)}("undefined"!=typeof window?window:global);csa.plugin(function(t){var e;function n(){if(!e)try{e=t.global.localStorage||{}}catch(t){e={}}}t.store=function(t,c){try{if(n(),!t)return Object.keys(e);if(!c)return e[t];e[t]=c}catch(t){}},t.deleteStored=function(t){try{n(),delete e[t]}catch(t){}}});csa.plugin(function(n){var r,e=n.global,o=n("Events"),i=e.location,f=e.document,a=e.addEventListener,l=n.emit;function t(a){var e=!!r;e&&(l("$beforePageTransition"),l("$pageTransition"));var t={schemaId:"csa.PageEntity.1",id:r=n.UUID(),url:i.href,server:i.hostname,path:i.pathname,referrer:f.referrer,title:f.title};Object.keys(a||{}).forEach(function(e){t[e]=a[e]}),o("setEntity",{page:t}),e&&l("$afterPageTransition")}function d(){l("$load"),l("$afterload")}function c(){l("$beforeunload"),l("$unload"),l("$afterunload")}i&&f&&(a&&(a("beforeunload",c),a("pagehide",c),"complete"===f.readyState?d():a("load",d)),n.register("SPA",{newPage:t}),t())});csa.plugin(function(c){var t="UNKNOWN",a="id",i="messageId",e="timestamp",u="producerId",o="application",f="obfuscatedMarketplaceId",s="entities",r="schemaId",d="version",l="attributes",p=c.config,g=c("Transport"),v={},I=function(n,t){Object.keys(n).forEach(t)};function m(t,i,e){I(i,function(n){n in t||(t[n]={version:1,id:i[n][a]||c.UUID()}),U(t[n],i[n],e)})}function U(t,i,e){I(i,function(n){!e&&n!==a||(t[n]=i[n])})}function b(c,n,o){I(n,function(n){var t=c[n];if(t[r]){var i={},e={};h(i),i[a]=t[a],i[u]=t[u]||o,i[r]=t[r],i[d]=t[d]++,U(i[l]=e,t,1),E(e),g("log",i)}})}function h(n){n[e]=n[e]||c.time("ISO"),n[i]=c.UUID(),n[o]=p.Application||t,n[f]=p.ObfuscatedMarketplaceId||t}function E(n){delete n[d],delete n[r],delete n[u]}function O(c){var o={};this.log=function(n,t){var i={},e=(t||{}).full;h(n),m(i,v,e),m(i,o,e),m(i,n[s]||{},e),I(i,function(n){E(i[n])}),n[u]=c[u],n[s]=i,g("log",n)},this.setEntity=function(n){m(o,n,1),b(o,n,c[u])}}c.on("$pageTransition",function(){v={}}),c.register("Events",{setEntity:function(n){m(v,n,1),b(v,n,"csa")},instance:function(n){return new O(n)}})});csa.plugin(function(s){var c,l="Transport",d="post",a="preflight",r="csa.cajun.",i="store",u="deleteStored",n="addEventListener",f="sendBeacon",t=0,e=s.config[l+".BufferSize"]||2e3,g=s.config[l+".RetryDelay"]||1500,o=[],h=0,p=[],v=s.global,y=v.document,m=s.config[l+".FlushInterval"]||5e3,E=0;function T(n){if(864e5<s.time()-new Date(n.timestamp))return s.error("Event is too old: "+n);h<e&&(o.push(n),h++,!E&&t&&(E=setTimeout(R,m)))}function R(){p.forEach(function(t){var e=[];o.forEach(function(n){t.accepts(n)&&e.push(n)}),e.length&&(t.chunks?t.chunks(e).forEach(function(n){S(t,n)}):S(t,e))}),o=[],E=0}function S(t,e){function o(){s[u](r+n)}var n=s.UUID();s[i](r+n,JSON.stringify(e)),[function(n,t,e){var o=v.navigator||{},r=v.cordova||{};if(!o[f]||!n[d])return 0;n[a]&&r&&"ios"===r.platformId&&!c&&((new Image).src=n[a]().url,c=1);var i=n[d](t);if(!i.type&&o[f](i.url,i.body))return e(),1},function(n,t,e){if(!n[d])return 0;var o=n[d](t),r=o.url,i=o.body,c=o.type,a=new XMLHttpRequest,u=0;function f(n,t,e){a.open("POST",n),e&&a.setRequestHeader("Content-Type",e),a.send(t)}return a.onload=function(){a.status<299?e():s.config[l+".XHRRetries"]&&u<3&&setTimeout(function(){f(r,i,c)},++u*g)},f(r,i,c),1}].some(function(n){try{return n(t,e,o)}catch(n){}})}s.once("$afterload",function(){var e;t=1,e=T,(s[i]()||[]).forEach(function(n){if(!n.indexOf(r))try{var t=s[i](n);s[u](n),JSON.parse(t).forEach(e)}catch(n){s.error(n)}}),y&&y[n]&&y[n]("visibilitychange",R,!1),R()}),s.once("$afterunload",function(){t=1,R()}),s.on("$afterPageTransition",function(){h=0}),s.register(l,{log:T,register:function(n){p.push(n)}})});csa.plugin(function(n){var r=n.config["Events.SushiEndpoint"];n("Transport")("register",{accepts:function(n){return n.schemaId},post:function(n){var t=n.map(function(n){return{data:n}});return{url:r,body:JSON.stringify({events:t})}},preflight:function(){var n,t=/\/\/(.*?)\//.exec(r);return t&&t[1]&&(n="https://"+t[1]+"/ping"),{url:n}},chunks:function(n){for(var t=[];500<n.length;)t.push(n.splice(0,500));return t.push(n),t}})});csa.plugin(function(t){var i,a,o,r,d=t.config["Content.ImpressionMinimumTime"]||1e3,e="addEventListener",c="hidden",n="renderedTo",s=n+"Viewed",u=n+"Meaningful",f=n+"Impressed",g=1,m=2,l=3,v=4,p=5,h="loaded",T=7,I=t.global,P=t("Events",{producerId:"csa"}),y=I.document,C={},b={};if(!y||!y[e]||void 0===y[c])return E("PageStateChange.2",{state:"ignored"});function w(e){if(!C[T]){var n;if(C[e]=t.time(),e!==l&&e!==h||(i=i||C[e]),i&&!y[c])a=a||C[e],(n={})[u]=i-o,n[s]=a-o,E("PageView.4",n),r=r||setTimeout(S,d);if(e!==p&&e!==g&&e!==m||(clearTimeout(r),r=0),e!==g&&e!==m||E("PageRender.3",{transitionType:e===g?"hard":"soft"}),e===T)(n={})[u]=i-o,n[s]=a-o,n[f]=C[e]-o,E("PageImpressed.2",n)}}function E(e,n){b[e]||(n.schemaId="csa."+e,P("log",n,{full:1}),b[e]=1)}function M(){w(y[c]?p:v)}function S(){w(T),r=0}function V(){var e=o?m:g;C={},b={},a=i=0,o=t.time(),w(e),M()}function $(){var e=y.readyState;"interactive"===e&&w(l),"complete"===e&&w(h)}V(),y[e]("visibilitychange",M,!1),y[e]("readystatechange",$,!1),t.on("$afterPageTransition",V),t.once("$load",$),t.register("Content",{get:function(){return{emit:w}}})});
+!function(n){var e,o,r="splice",i=n.csa,t={},u={},f=n.csa._s,c=0,a={},s={},l=setTimeout,g=Object.keys;function h(n,t){return i(n,t)}function d(n,t){var i=u[n]||{};D(i,t),u[n]=i,l(b,0)}function p(n,t){a[n]||(a[n]=[]),a[n].push(t)}function v(n,t){if(n in s)t(s[n]);else{p(n,function(n){return t(n),!1})}}function m(n){if(t.DEBUG)throw n}function w(){return Math.abs(4294967295*Math.random()|0).toString(36)}function b(){for(var n=0;n<f.length;){var t=f[n],i=t[0]in u;if(!i&&!o)return void(c=t.length);i?(f[r](c=n,1),y(t)):n++}}function y(n){var arguments,t=u[n[0]],i=(arguments=n[1])[0];if(!t||!t[i])return m("Undefined function: "+t+"/"+i);e=n[3],u[n[2]]=t[i].apply(t,arguments.slice(1))||{},e=0}function S(){o=1,b()}function D(t,i){g(i).forEach(function(n){t[n]=i[n]})}v("$beforeunload",S),d("Config",{instance:function(n){D(t,n)}}),i.plugin=function(n){n(h)},h.config=t,h.register=d,h.on=p,h.removeListener=function(n,t){var i=a[n];i&&i[r](i.indexOf(t),1)},h.once=v,h.emit=function(n,t){for(var i=a[n]||[],e=0;e<i.length;)!1===i[e](t)?i[r](e,1):e++;s[n]=t||{}},h.UUID=function(){return[w(),w(),w(),w()].join("-")},h.time=function(n){var t=e?new Date(e.time):new Date;return"ISO"===n?t.toISOString():t.getTime()},h.error=m,h.exec=function(n,t){return function(){try{n.apply(this,arguments)}catch(n){}}},(h.global=n).csa._s.push=function(n){n[0]in u&&(!f.length||o)?y(n):f[r](c++,0,n)},b(),l(function(){l(S,t.SkipMissingPluginsTimeout||5e3)},1)}("undefined"!=typeof window?window:global);csa.plugin(function(t){var e;function n(){if(!e)try{e=t.global.localStorage||{}}catch(t){e={}}}t.store=function(t,c){try{if(n(),!t)return Object.keys(e);if(!c)return e[t];e[t]=c}catch(t){}},t.deleteStored=function(t){try{n(),delete e[t]}catch(t){}}});csa.plugin(function(n){var r,e=n.global,o=n("Events"),i=e.location,f=e.document,a=e.addEventListener,l=n.emit;function t(a){var e=!!r;e&&(l("$beforePageTransition"),l("$pageTransition"));var t={schemaId:"csa.PageEntity.1",id:r=n.UUID(),url:i.href,server:i.hostname,path:i.pathname,referrer:f.referrer,title:f.title};Object.keys(a||{}).forEach(function(e){t[e]=a[e]}),o("setEntity",{page:t}),e&&l("$afterPageTransition")}function d(){l("$load"),l("$afterload")}function c(){l("$beforeunload"),l("$unload"),l("$afterunload")}i&&f&&(a&&(a("beforeunload",c),a("pagehide",c),"complete"===f.readyState?d():a("load",d)),n.register("SPA",{newPage:t}),t())});csa.plugin(function(c){var t="UNKNOWN",a="id",i="messageId",e="timestamp",u="producerId",o="application",f="obfuscatedMarketplaceId",s="entities",r="schemaId",d="version",l="attributes",p=c.config,g=c("Transport"),v={},I=function(n,t){Object.keys(n).forEach(t)};function m(t,i,e){I(i,function(n){n in t||(t[n]={version:1,id:i[n][a]||c.UUID()}),U(t[n],i[n],e)})}function U(t,i,e){I(i,function(n){!e&&n!==a||(t[n]=i[n])})}function b(c,n,o){I(n,function(n){var t=c[n];if(t[r]){var i={},e={};h(i),i[a]=t[a],i[u]=t[u]||o,i[r]=t[r],i[d]=t[d]++,U(i[l]=e,t,1),E(e),g("log",i)}})}function h(n){n[e]=n[e]||c.time("ISO"),n[i]=c.UUID(),n[o]=p.Application||t,n[f]=p.ObfuscatedMarketplaceId||t}function E(n){delete n[d],delete n[r],delete n[u]}function O(c){var o={};this.log=function(n,t){var i={},e=(t||{}).full;h(n),m(i,v,e),m(i,o,e),m(i,n[s]||{},e),I(i,function(n){E(i[n])}),n[u]=c[u],n[s]=i,g("log",n)},this.setEntity=function(n){m(o,n,1),b(o,n,c[u])}}c.on("$pageTransition",function(){v={}}),c.register("Events",{setEntity:function(n){m(v,n,1),b(v,n,"csa")},instance:function(n){return new O(n)}})});csa.plugin(function(o){var n,i,r="csa.cajun.",c="post",u="preflight",e="addEventListener",f="sendBeacon",t="Transport",s=o.global,a=s.document,d=o.store,l=o.config,p=0,v=[],h=[],g=l[t+".BatchInterval"]||5e3,y=l[t+".MaxEvents"]||1e3,m=0,E=864e5;function S(e){if(y<=++m)return m===y?o.error("Max events reached"):0;var t=e.timestamp;if(o.time()-new Date(t)>E)return o.error("Event is too old: "+t);!n&&p&&(n=setTimeout(T,g)),h.push(e)}function T(){v.forEach(function(t){var n=[];h.forEach(function(e){t.accepts(e)&&n.push(e)}),n.length&&function(t,n,e){d(e,JSON.stringify(n));function r(){o.deleteStored(e)}[function(e,t,n){var r=s.navigator||{},o=s.cordova||{};if(!r[f])return;if("ios"===o.platformId&&!i){if(!e[u])return;(new Image).src=e[u]().url,i=1}var a=e[c](t);if(!a.type&&r[f](a.url,a.body))return n(),1},function(e,t,n){var r=e[c](t),o=r.type,a=new XMLHttpRequest;a.onload=function(){a.status<299&&n()},a.open("POST",r.url),o&&a.setRequestHeader("Content-Type",o);return a.send(r.body),1}].some(function(e){try{return e(t,n,r)}catch(e){}})}(t,n,r+o.UUID())}),h=[],n=0}o.register(t,{log:S,register:function(e){v.push(e)}}),o.once("$afterunload",function(){p=1,T()}),o.once("$afterload",function(){p=1,(d()||[]).forEach(function(e){if(!e.indexOf(r))try{var t=d(e);o.deleteStored(e),JSON.parse(t).forEach(S)}catch(e){}}),T(),a&&a[e]&&a[e]("visibilitychange",T,!1)}),o.on("$afterPageTransition",function(){m=0})});csa.plugin(function(n){var t,r=n.config["Events.SushiEndpoint"];var i=/\/\/(.*?)\//.exec(r);i&&i[1]&&(t="https://"+i[1]+"/ping"),n("Transport")("register",{post:function(n){return n=n.map(function(n){return{data:n}}),{url:r,body:JSON.stringify({events:n})}},preflight:function(){return{url:t}},accepts:function(){return 1}})});csa.plugin(function(t){var i,a,o,r,d=t.config["Content.ImpressionMinimumTime"]||1e3,e="addEventListener",c="hidden",n="renderedTo",s=n+"Viewed",u=n+"Meaningful",f=n+"Impressed",g=1,m=2,l=3,v=4,p=5,h="loaded",T=7,I=t.global,P=t("Events",{producerId:"csa"}),y=I.document,C={},b={};if(!y||!y[e]||void 0===y[c])return E("PageStateChange.2",{state:"ignored"});function w(e){if(!C[T]){var n;if(C[e]=t.time(),e!==l&&e!==h||(i=i||C[e]),i&&!y[c])a=a||C[e],(n={})[u]=i-o,n[s]=a-o,E("PageView.4",n),r=r||setTimeout(S,d);if(e!==p&&e!==g&&e!==m||(clearTimeout(r),r=0),e!==g&&e!==m||E("PageRender.3",{transitionType:e===g?"hard":"soft"}),e===T)(n={})[u]=i-o,n[s]=a-o,n[f]=C[e]-o,E("PageImpressed.2",n)}}function E(e,n){b[e]||(n.schemaId="csa."+e,P("log",n,{full:1}),b[e]=1)}function M(){w(y[c]?p:v)}function S(){w(T),r=0}function V(){var e=o?m:g;C={},b={},a=i=0,o=t.time(),w(e),M()}function $(){var e=y.readyState;"interactive"===e&&w(l),"complete"===e&&w(h)}V(),y[e]("visibilitychange",M,!1),y[e]("readystatechange",$,!1),t.on("$afterPageTransition",V),t.once("$load",$),t.register("Content",{get:function(){return{emit:w}}})});
 
 
 
@@ -395,6 +395,10 @@ window.navmet.push({key:'Logo',end:+new Date(),begin:window.navmet.tmp});
   Hello, Sign in
   Account & Lists
   
+  
+    Account
+    
+  
   Sign in
   Account & Lists
 
@@ -490,6 +494,7 @@ Under $10
         Pet Supplies
         Prime Pantry
         Prime Video
+        Smart Home
         Software
         Sports & Outdoors
         Subscription Boxes
@@ -663,8 +668,8 @@ window.$Nav && $Nav.when("util.templates").run("FlyoutErrorTemplate", function(t
   , searchAliases: ["aps","amazon-custom-products","amazon-devices","amazonbasics","amazonfresh","wholefoods","stripbooks","popular","apparel","electronics","sporting","sports-and-fitness","outdoor-recreation","fan-shop","garden","videogames","toys-and-games","jewelry","digital-text","digital-music","prime-digital-music","watches","grocery","hpc","instant-video","handmade","handmade-jewelry","handmade-home-and-kitchen","prime-instant-video","shop-instant-video","baby-products","office-products","software","smart-home","magazines","tools","automotive","misc","industrial","mi","pet-supplies","digital-music-track","digital-music-album","mobile","mobile-apps","movies-tv","music-artist","music-album","music-song","stripbooks-spanish","electronics-accessories","pantry","photo","audio-video","computers","furniture","kitchen","audible","audiobooks","beauty","shoes","arts-crafts","appliances","gift-cards","pets","outdoor","lawngarden","collectibles","replacement-parts","financial","fine-art","fashion","fashion-womens","fashion-womens-clothing","fashion-womens-jewelry","fashion-womens-shoes","fashion-womens-watches","fashion-womens-handbags","fashion-mens","fashion-mens-clothing","fashion-mens-jewelry","fashion-mens-shoes","fashion-mens-watches","fashion-girls","fashion-girls-clothing","fashion-girls-jewelry","fashion-girls-shoes","fashion-girls-watches","fashion-boys","fashion-boys-clothing","fashion-boys-jewelry","fashion-boys-shoes","fashion-boys-watches","fashion-baby","fashion-baby-boys","fashion-baby-girls","fashion-luggage","3d-printing","tradein-aps","live-explorations","local-services","vehicles","video-shorts","warehouse-deals","luxury-beauty","banjo-apps","black-friday","cyber-monday","alexa-skills","subscribe-with-amazon","courses","edu-alt-content","amazon-global-store","prime-wardrobe","under-ten-dollars"]
   , filterAliases: []
   , pageType: "CustomerReviews"
-  , requestId: "PD74HADKMGXR7GGVSTE3"
-  , sessionId: "133-6775139-0133918"
+  , requestId: "QQ4ZG9ACYC3M10M0Q6X8"
+  , sessionId: "141-0808096-1187415"
   , language: "en_US"
   , customerId: ""
   , b2b: 0
@@ -855,14 +860,14 @@ window.$Nav && $Nav.declare('config.subnavFlyoutUrl', '\x2Fgp\x2Fnavigation\x2Fa
 
 window.$Nav && $Nav.declare('config.recordEvUrl', '\x2Fgp\x2Fnavigation\x2Fajax\x2Frecordevent.html');
 window.$Nav && $Nav.declare('config.recordEvInterval', 15000);
-window.$Nav && $Nav.declare('config.sessionId', '133\x2D6775139\x2D0133918');
-window.$Nav && $Nav.declare('config.requestId', 'PD74HADKMGXR7GGVSTE3');
+window.$Nav && $Nav.declare('config.sessionId', '141\x2D0808096\x2D1187415');
+window.$Nav && $Nav.declare('config.requestId', 'QQ4ZG9ACYC3M10M0Q6X8');
 
 window.$Nav && $Nav.declare('config.alexaListEnabled', true);
 
 window.$Nav && $Nav.declare('config.readyOnATF', false);
 
-window.$Nav && $Nav.declare('config.dynamicMenuArgs', {"rid":"PD74HADKMGXR7GGVSTE3","isFullWidthPrime":0,"isPrime":0,"dynamicRequest":1,"weblabs":"","isFreshRegionAndCustomer":"","primeMenuWidth":310});
+window.$Nav && $Nav.declare('config.dynamicMenuArgs', {"rid":"QQ4ZG9ACYC3M10M0Q6X8","isFullWidthPrime":0,"isPrime":0,"dynamicRequest":1,"weblabs":"","isFreshRegionAndCustomer":"","primeMenuWidth":310});
 
 window.$Nav && $Nav.declare('config.customerName', false);
 
@@ -964,7 +969,7 @@ window.$Nav && $Nav.declare('config.flyoutClickState', 'C');
 
 window.$Nav && $Nav.declare('config.pssFlag', 0);
 
-window.$Nav && $Nav.declare('config.isShortAccountList', false);
+window.$Nav && $Nav.declare('config.isShortAccountList', true);
 
 if (window.P && typeof window.P.declare === "function" && typeof window.P.now === "function") {
   window.P.now('packardGlowIngressJsEnabled').execute(function(glowEnabled) {
@@ -1354,7 +1359,7 @@ Reign in BloodbySLAYERFormat: Audio CDChangeWrite a reviewSee All Buying Options
     window.P && P.register('af');
     window.P && P.register('sp.load.js');
 
-{"csrfToken":"0.2508659363797443;1580153699197;gmV21vA0vzB+dUWqw8ezCGZxNtglB33FT3eTCmkAAAABAAAAAF4vO2NyYXcAAAAA+4kUEk/7iMGR3xPcX6iU","signinUrl":"https://www.amazon.com/ap/signin?openid.return_to=https%3A%2F%2Fwww.amazon.com%2FReign-Blood-SLAYER%2Fproduct-reviews%2FB00BV0W8RQ%3Fie%3DUTF8%26reviewerType%3Dall_reviews%26sortBy%3Dhelpful&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0","asin":"B00BV0W8RQ"}Top positive reviewSee all 590 positive reviews Matt4.0 out of 5 starsGreat Music, Poor DynamicsMarch 12, 2015The music is fantastic; this album is a classic.BUT:The MP3's are based on the 2002 reissue, meaning the original recording (which had an average dynamic range of 12db, or near vinyl quality) has been crushed down to a "modern" dynamic range of 6db.  This means the original recording had more twice the variation in loud sounds to soft sounds.  If you're uncertain what that means, here's my perspective on it compared to the original: the drums have lost almost all of the "thud".  The guitars are now way high in the mix, completely drowning out any bass work.  There are many times that you can hardly make out the instrumentation; the fastest parts of the tracks just sound like a wall of noise.What would improve a user's experience?  This is old-school music, use the original recording with dynamics in tact.  The album was recorded to sound a certain way; compressing the sound ruins a lot of the enjoyment of listening.Compressing a classic album like this is like varnishing the Mona Lisa to make it look more modern: it may seem better now, but you've ruined the intent of the original.
+{"csrfToken":"0.8854811126544294;1580160728945;gt2D2WsHQQkPe6Pi38xgqqpl/jK9M9rmS4yMEgsAAAABAAAAAF4vVthyYXcAAAAA+4kUEk/7iMGR3xPcX6iU","signinUrl":"https://www.amazon.com/ap/signin?openid.return_to=https%3A%2F%2Fwww.amazon.com%2FReign-Blood-SLAYER%2Fproduct-reviews%2FB00BV0W8RQ%3Fie%3DUTF8%26reviewerType%3Dall_reviews%26sortBy%3Dhelpful&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0","asin":"B00BV0W8RQ"}Top positive reviewSee all 590 positive reviews Matt4.0 out of 5 starsGreat Music, Poor DynamicsMarch 12, 2015The music is fantastic; this album is a classic.BUT:The MP3's are based on the 2002 reissue, meaning the original recording (which had an average dynamic range of 12db, or near vinyl quality) has been crushed down to a "modern" dynamic range of 6db.  This means the original recording had more twice the variation in loud sounds to soft sounds.  If you're uncertain what that means, here's my perspective on it compared to the original: the drums have lost almost all of the "thud".  The guitars are now way high in the mix, completely drowning out any bass work.  There are many times that you can hardly make out the instrumentation; the fastest parts of the tracks just sound like a wall of noise.What would improve a user's experience?  This is old-school music, use the original recording with dynamics in tact.  The album was recorded to sound a certain way; compressing the sound ruins a lot of the enjoyment of listening.Compressing a classic album like this is like varnishing the Mona Lisa to make it look more modern: it may seem better now, but you've ruined the intent of the original.
       
       Read more
   
@@ -1822,7 +1827,7 @@ There was a problem loading comments right now. Please try again later.There are
          uet('cf');
      }
 window.P.register('cf');
-Customers also viewed these itemsSouth of HeavenbySlayer$11.134.9 out of 5 stars20Hell Awaits [Vinyl]bySlayer$22.594.6 out of 5 stars155Seasons in the AbyssbySlayer$9.994.8 out of 5 stars20Seasons In The Abyss [LP][Explicit]bySlayer$21.724.8 out of 5 stars311South Of Heaven [LP][Explicit]bySlayer$21.884.8 out of 5 stars281Need customer service? Click here See all details for Reign in Blood
+Customers also viewed these itemsSouth of HeavenbySlayer$11.134.9 out of 5 stars20Hell Awaits [Vinyl]bySlayer$22.594.6 out of 5 stars155Seasons in the AbyssbySlayer$9.984.8 out of 5 stars20Seasons In The Abyss [LP][Explicit]bySlayer$21.724.8 out of 5 stars311South Of Heaven [LP][Explicit]bySlayer$21.884.8 out of 5 stars281Need customer service? Click here See all details for Reign in Blood
 
 
 
@@ -1938,7 +1943,7 @@ window.$Nav && $Nav.declare('config.prefetch',function() {
     window.$Nav && $Nav.when('$', 'page.ready').run('MXMarketplaceRedirectOverlay',function($) {
         $.ajax({
             type: 'POST',
-            url: '/gp/redirection/mexico_new.html/133-6775139-0133918',
+            url: '/gp/redirection/mexico_new.html/141-0808096-1187415',
             data: {
                 path: '/product-reviews/B00BV0W8RQ',
                 queryString: '?ie=UTF8\u0026reviewerType=all%5Freviews\u0026showViewpoints=1\u0026ie=UTF8\u0026pageNumber=1\u0026sortBy=helpful',
@@ -2078,7 +2083,7 @@ window.$Nav && $Nav.declare('config.prefetch',function() {
   
 
 
-    {"origSessionId":"133-6775139-0133918","subPageType":null,"pageType":"CustomerReviews","ASIN":"B00BV0W8RQ","path":"/product-reviews/B00BV0W8RQ","isAUI":"1"}
+    {"origSessionId":"141-0808096-1187415","subPageType":null,"pageType":"CustomerReviews","ASIN":"B00BV0W8RQ","path":"/product-reviews/B00BV0W8RQ","isAUI":"1"}
       
 
       
@@ -2205,7 +2210,7 @@ window.$Nav && $Nav.declare('config.prefetch',function() {
 
 
     
-        {"rhfHandlerParams":{"search":"","rhfAsins":"","noP13NCache":"","weblabTriggers":"","auiDebug":"","keywords":"","k":"","rviAsins":"","url":"","parentSession":"133-6775139-0133918","rhfState":"","contextMetadataOverride":"","currentSubPageType":null,"field-keywords":"","relatedRequestId":"PD74HADKMGXR7GGVSTE3","recsAsins":"","excludeASIN":"QjAwQlYwVzhSUQ==","auditEnabled":"","customerId":"","testRecsFailure":"","previewCampaigns":"","forceWidgets":"","currentPageType":"CustomerReviews","stringDebug":""},"subPageType":null,"requestId":"PD74HADKMGXR7GGVSTE3","sessionId":"133-6775139-0133918","customerId":"","pageType":"CustomerReviews","ybhHandlerParams":{"relatedRequestId":"PD74HADKMGXR7GGVSTE3","currentPageType":"CustomerReviews","parentSession":"133-6775139-0133918"}}
+        {"rhfHandlerParams":{"search":"","rhfAsins":"","noP13NCache":"","weblabTriggers":"","auiDebug":"","keywords":"","k":"","rviAsins":"","url":"","parentSession":"141-0808096-1187415","rhfState":"","contextMetadataOverride":"","currentSubPageType":null,"field-keywords":"","relatedRequestId":"QQ4ZG9ACYC3M10M0Q6X8","recsAsins":"","excludeASIN":"QjAwQlYwVzhSUQ==","auditEnabled":"","customerId":"","testRecsFailure":"","previewCampaigns":"","forceWidgets":"","currentPageType":"CustomerReviews","stringDebug":""},"subPageType":null,"requestId":"QQ4ZG9ACYC3M10M0Q6X8","sessionId":"141-0808096-1187415","customerId":"","pageType":"CustomerReviews","ybhHandlerParams":{"relatedRequestId":"QQ4ZG9ACYC3M10M0Q6X8","currentPageType":"CustomerReviews","parentSession":"141-0808096-1187415"}}
     
 
 
@@ -2414,12 +2419,17 @@ Amazon Second Chance Pass it on, trade it in, give it a second life
    
 Conditions of UsePrivacy NoticeInterest-Based Ads 1996-2020, Amazon.com, Inc. or its affiliates
 
-(function(a,b){a.attachEvent?a.attachEvent("onload",b):a.addEventListener&&a.addEventListener("load",b,!1)})(window,function(){setTimeout(function(){var el=document.getElementById("sis_pixel_r2");el&&(el.innerHTML='<iframe id="DAsis" src="//s.amazon-adsystem.com/iu3?d=amazon.com&slot=navFooter&a2=01017ba606f9ecf0145ef31fe73a05a3948f66419165fb6a9d1d6f2dcea2fad6c7a0&old_oo=0&ts=1580153699257&s=AXUvi-K2QuHv-p9k1o1ZxRtSDQ9VWupus5_XsqdZQ2pT&cb=1580153699257" width="1" height="1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>')},300)});
+(function(a,b){a.attachEvent?a.attachEvent("onload",b):a.addEventListener&&a.addEventListener("load",b,!1)})(window,function(){setTimeout(function(){var el=document.getElementById("sis_pixel_r2");el&&(el.innerHTML='<iframe id="DAsis" src="//s.amazon-adsystem.com/iu3?d=amazon.com&slot=navFooter&a2=01010e1472deeee46b53e90773b170295752c69fcc89307ede687a8504cda21dd1a6&old_oo=0&ts=1580160728988&s=AWSOzVtM3zXXXbA6C2uf0Du0E_0yjNK49VwHue0Jcyfo&cb=1580160728988" width="1" height="1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>')},300)});
 
 
 
-(function(w,t){w.attachEvent?w.attachEvent('onload',t):w.addEventListener('load',t, !1)})(window,function(){setTimeout(function(){document.getElementById('apaypx').innerHTML='<iframe id=\'apaypxframe\' src=\'https://coin.amazonpay.com/rb?a2=0101f38129cff682ed59d713927a46930b35097e07bf0ff17a668292896518da8139&d=www.amazon.com\' frameborder=0 width=0 height=0>'},300)});
 
+
+
+
+(window.AmazonUIPageJS ? AmazonUIPageJS : P).when('afterLoad').execute(function() {
+  (window.AmazonUIPageJS ? AmazonUIPageJS : P).load.js('https://images-na.ssl-images-amazon.com/images/I/11QVEVR-F9L.js?AUIClients/MSAVowelsJavascriptAssets');
+});
 
 
 

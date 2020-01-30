@@ -84,7 +84,7 @@ def get_soup(url):
     out = requests.get(url, headers=header)
     #print(out.encoding)
     #out.encoding = 'ISO-8859-1'
-    print(out.encoding)
+    print('get product info by URL')
     print('***********************************************')
     #print(type(out.content))
     file = open("out.txt", "w")
